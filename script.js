@@ -4,9 +4,9 @@ document.addEventListener("click", (e) => {
     if (circles.length === 2) {
         let dis = Math.sqrt(Math.pow(cords[1][0] - cords[0][0], 2) + Math.pow(cords[1][1] - cords[0][1], 2));
         if (dis > cords[0][2] + cords[1][2]) {
-            console.log("Not Intersecting");
+            alert("Not Intersecting");
         } else {
-            console.log("Intersecting");
+            alert("Intersecting");
         }
         document.body.removeChild(circles[0]);
         document.body.removeChild(circles[1]);
